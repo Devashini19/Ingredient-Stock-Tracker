@@ -1,0 +1,145 @@
+<body>
+
+<h1>🍽 Ingredient Stock Tracker</h1>
+
+<!-- VIEW ITEMS FIRST -->
+<div class="card">
+
+    <h3>View Items</h3>
+    <button onclick="getItems()">Show Items</button>
+    <div id="output"></div>
+
+</div>
+
+<!-- FILTER BY CATEGORY -->
+<div class="card">
+
+    <h3>Filter By Category</h3>
+
+    <select id="filter_category">
+
+        <option value="general">General</option>
+        <option value="grains">Grains</option>
+        <option value="oil">Cooking Oil</option>
+        <option value="flour">Flour</option>
+        <option value="fruits">Fruits</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="meat">Meat</option>
+        <option value="dairy">Dairy Products</option>
+        <option value="beverages">Beverages</option>
+        <option value="frozenfood">Frozen Food</option>
+        <option value="spices">Spices</option>
+        <option value="bakery">Bakery Items</option>
+
+    </select><br>
+
+    <button onclick="filterCategory()">Filter</button>
+    <div id="filter_output"></div>
+
+</div>
+
+<!-- STOCK IN -->
+<div class="card">
+
+    <h3>Stock In</h3>
+    <input id="in_id" placeholder="Item ID"><br>
+    <input id="in_qty" type="number" placeholder="Quantity"><br>
+    <button onclick="stockIn()">Add Stock</button>
+
+</div>
+
+<!-- STOCK OUT -->
+<div class="card">
+
+    <h3>Stock Out</h3>
+    <input id="out_id" placeholder="Item ID"><br>
+    <input id="out_qty" type="number" placeholder="Quantity"><br>
+    <button onclick="stockOut()">Reduce</button>
+
+</div>
+
+<!-- ADD ITEM -->
+<div class="card">
+
+    <h3>Add Item</h3>
+
+    <input id="name" placeholder="Item Name"><br>
+
+    <select id="unit">
+        <option value="kg">Kg</option>
+        <option value="g">Gram</option>
+        <option value="ml">Ml</option>
+        <option value="litre">Litre</option>
+    </select><br>
+
+    <select id="category">
+
+        <option value="general">General</option>
+        <option value="grains">Grains</option>
+        <option value="oil">Cooking Oil</option>
+        <option value="flour">Flour</option>
+        <option value="fruits">Fruits</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="meat">Meat</option>
+        <option value="dairy">Dairy Products</option>
+        <option value="beverages">Beverages</option>
+        <option value="frozenfood">Frozen Food</option>
+        <option value="spices">Spices</option>
+        <option value="bakery">Bakery Items</option>
+
+    </select><br>
+
+    <input id="quantity" type="number" placeholder="Quantity"><br>
+    <input id="threshold" type="number" placeholder="Threshold"><br>
+
+    <button onclick="addItem()">Add</button>
+
+</div>
+
+<!-- UPDATE ITEM -->
+<div class="card">
+
+    <h3>Update Item</h3>
+
+    <input id="up_id" placeholder="Current Item ID"><br>
+    <input id="new_id" placeholder="New Item ID"><br>
+    <input id="up_name" placeholder="New Name"><br>
+
+    <select id="up_unit">
+        <option value="">Select Unit</option>
+        <option value="kg">Kg</option>
+        <option value="g">Gram</option>
+        <option value="ml">ml</option>
+        <option value="litre">Litre</option>
+    </select><br>
+
+    <select id="up_category">
+        <option value="">Select Category</option>
+        <option value="general">General</option>
+        <option value="grains">Grains</option>
+        <option value="oil">Cooking Oil</option>
+        <option value="flour">Flour</option>
+        <option value="fruits">Fruits</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="meat">Meat</option>
+        <option value="dairy">Dairy Products</option>
+        <option value="beverages">Beverages</option>
+        <option value="frozenfood">Frozen Food</option>
+        <option value="spices">Spices</option>
+        <option value="bakery">Bakery Items</option>
+    </select><br>
+
+    <button onclick="updateItem()">Update</button>
+
+</div>
+
+<!-- DELETE ITEM -->
+<div class="card">
+
+    <h3>Delete Item</h3>
+    <input id="delete_id" placeholder="Enter Item ID"><br>
+    <button onclick="deleteItem()">Delete Item</button>
+
+</div>
+
+</body>

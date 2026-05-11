@@ -1,0 +1,328 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =========================
+   GLOBAL
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(to right,#eef2ff,#f8fafc);
+    min-height:100vh;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:30px 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.header h1{
+    font-size:48px;
+    font-weight:700;
+    color:#111827;
+    margin-bottom:10px;
+}
+
+.header p{
+    color:#6b7280;
+    font-size:18px;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-bottom:35px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    font-size:42px;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#626561;
+    font-size:18px;
+    font-weight:500;
+}
+
+.danger h2{
+    color:#ef4444;
+}
+
+/* =========================
+   FORM SECTION
+========================= */
+.form-section{
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.form-section h2{
+    margin-bottom:25px;
+    color:#111827;
+    font-size:28px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:18px;
+}
+
+.form-grid input,
+.form-grid select{
+    padding:14px;
+    border-radius:12px;
+    border:1px solid #d1d5db;
+    outline:none;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.form-grid input:focus,
+.form-grid select:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37,99,235,0.15);
+}
+
+/* =========================
+   ADD BUTTON
+========================= */
+.add-btn{
+    margin-top:25px;
+    background:linear-gradient(to right,#2563eb,#57cb64);
+    color:white;
+    border:none;
+    padding:14px 30px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.add-btn:hover{
+    transform:scale(1.03);
+}
+
+/* =========================
+   SEARCH + FILTER
+========================= */
+.search-box{
+    display:flex;
+    gap:15px;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+}
+
+.search-box input,
+.search-box select{
+    padding:14px;
+    border-radius:12px;
+    border:1px solid #d1d5db;
+    outline:none;
+    font-size:15px;
+}
+
+.search-box input{
+    flex:1;
+}
+
+.search-box button{
+    background:#4c5652;
+    color:white;
+    border:none;
+    padding:14px 25px;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.search-box button:hover{
+    opacity:0.9;
+}
+
+/* =========================
+   TABLE SECTION
+========================= */
+.table-section{
+    background:white;
+    border-radius:20px;
+    overflow-x:auto;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table thead{
+    background:linear-gradient(to right,#2563eb,#2563eb
+    );
+}
+
+table th{
+    color:white;
+    padding:18px;
+    font-size:15px;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+}
+
+table td{
+    padding:18px;
+    text-align:center;
+    border-bottom:1px solid #f3f4f6;
+    color:#374151;
+}
+
+table tbody tr:hover{
+    background:#f9fafb;
+}
+
+/* =========================
+   LOW STOCK ROW
+========================= */
+.row-low{
+    background:#fff1f2;
+}
+
+/* =========================
+   STATUS BADGES
+========================= */
+.low{
+    background:#fee2e2;
+    color:#dc2626;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.good{
+    background:#dcfce7;
+    color:#16a34a;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+.stockin,
+.stockout,
+.update,
+.delete{
+    border:none;
+    padding:10px 14px;
+    border-radius:10px;
+    cursor:pointer;
+    margin:3px;
+    color:white;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.stockin{
+    background:#16a34a;
+}
+
+.stockout{
+    background:#f59e0b;
+}
+
+.update{
+    background:#639eb7;
+}
+
+.delete{
+    background:#e04242;
+}
+
+.stockin:hover,
+.stockout:hover,
+.update:hover,
+.delete:hover{
+    transform:scale(1.05);
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer{
+    text-align:center;
+    margin-top:30px;
+    color:#6b7280;
+    font-size:15px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:768px){
+
+    .header h1{
+        font-size:34px;
+    }
+
+    .dashboard{
+        grid-template-columns:1fr;
+    }
+
+    .search-box{
+        flex-direction:column;
+    }
+
+    .search-box button{
+        width:100%;
+    }
+
+    table{
+        min-width:850px;
+    }
+}

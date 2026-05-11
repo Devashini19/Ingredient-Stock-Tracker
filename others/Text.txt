@@ -1,0 +1,17 @@
+PROJECT ROOT
+│
+├── backend   ← FastAPI (uvicorn here)
+│     └── main.py
+│
+└── frontend  ← React (npm start here)
+
+Step 1:
+cd C:\Proj-IngredientStockTracker\backend
+uvicorn main:app --reload
+http://127.0.0.1:8000
+
+Step 2:
+
+cd C:\Proj-IngredientStockTracker\frontend
+npm start
+
